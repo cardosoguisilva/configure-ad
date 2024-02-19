@@ -46,4 +46,5 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/55bfd7db-e233-4e4c-941e-418248adda56)
 
 2 Make sure there is a connection between the Client1 and DC1.
-- Login to Client1 with Remote Desktop and ping DC1’s private IP address with -t <ip address> command on 
+- Login to DC1 and enable ICMPv4 on local firewall. (wf.msc) 
+- Login to Client1 with Remote Desktop and ping DC1’s private IP address with -t <private IP address> command on 
