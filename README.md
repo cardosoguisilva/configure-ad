@@ -29,7 +29,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Create a bunch of additional users and attempt to log into client-1 with one of the users
 
 <h2>Deployment and Configuration Steps</h2>
-1 Setting up resources in Azure
+1 
+
+- Setting up resources in Azure
 - - Create a Windows Server named DC-1 (Domain Controller 1).
   - - Username: Labuser / Password: Password1234 (do not forget your password)
   - go to the DC1 folder in Azure and set the NIC Private IP address to static.
