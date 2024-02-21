@@ -133,4 +133,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
   
 ![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/d9229799-2735-4423-ba35-8a8e26023768)
 
+- Now you can use these new accounts to log into Client1 VM.
+- - All the passwords for these accounts are "Password1" as shown in the code.
+- Go to Active Directory Users and Computers under the folder employees choose a random account there and attempt to log into Clinet1.
+
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/95386fa7-4253-4e7e-b3eb-930c26fd79ec)
+
 
