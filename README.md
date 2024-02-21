@@ -119,4 +119,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - After the VM restarted use Jane's login info to log back onto Client1.
 - - Username: mydomain.com\jane_admin
   - Password: Password1
+- Go to system properties -> Remote Desktop -> Select users that can remotely access this PC.
+- Add "Domain Users" -> Check names and apply.
+- Now all domain users can login into client1.
+  
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/13cce874-c039-4c95-9a0c-080f5d094200)
+
 
