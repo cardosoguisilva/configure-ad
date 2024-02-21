@@ -102,11 +102,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/cd1002df-cd98-48ff-8302-24a102d7c344)
 
 - Log back into Client 1
-- - Go to settings and click on "Rename this Pc (advanced)" -> Change -> select Domain and add "mydomain.com" -> Okay -> Put Jane's Login info.
+- - Go to settings and click on "Rename this Pc (advanced)" -> Change -> Select Domain and add "mydomain.com" -> Okay -> Put Jane's Login info.
+  - VM will restart.
 
 ![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/30138258-5105-4810-8ba7-9d8b08206712)
 
-- After the VM restarted use Jane's login info.
+- Log into DC1 and make sure Client1 shows up in Active Directory Users and Computers inside the “Computers” folder 
+
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/3fc15860-25cc-48e5-9755-4e87b9b5ca9d)
+
+- Create a new Organization Unit named "_CLIENTS" and drag Client 1 from the computer folder to the new OU.
+
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/7c8ae276-3eb3-4597-9995-e4a48ecaeed7)
+
+6 Setup Remote Desktop for non-administrative users on Client-1
+- After the VM restarted use Jane's login info to log back onto Client1.
 - - Username: mydomain.com\jane_admin
   - Password: Password1
 
