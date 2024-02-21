@@ -71,4 +71,35 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - now to log back to VM you will have to add "mydomain.com" in front of your username. Example: mydomain.com\labuser
 
 4 Create an Admin and Normal User Account in Active Directory
-- 
+- In Server Manager go to Tools -> Active Directory Users and Computers
+- Right-click "mydomain" and add a new Organizational Units
+- - _EMPLOYEES
+  - _ADMINS
+  
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/91a99e2b-f931-4e30-b1fc-7745a0bc819c)
+
+- Create a new employee named "Jane Doe" on the _ADMIN folder. Essentially you're just creating a new login for us to use. Choose your password and select "password never expires." Unselect any other box.
+
+
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/d63cf6a8-755b-4bf1-b8a0-b0b5535767d6)
+
+- To make Jane an Admin, right-click Jane Doe -> properties -> Add
+- Type "Domain Admins" and click "Check Names" -> Okay -> Apply
+
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/cd8ebb19-4396-4b39-ae78-149126f87c43)
+
+- Logout of labuser and log in as Jane:
+- - Username: mydomain.com\jane_admin
+  - Password: Password1
+- From now on use Jane Doe's account.
+
+5 Join Client-1 to your domain (mydomain.com)
+- From the Azure Portal, set Client1’s DNS settings to the DC’s Private IP address
+- On Client1 Azure, Click on Networking -> Client1797(yours should be different) -> DNS Serves -> Select Custom.
+- Add DC1 private IP address in the empty box and save it
+- Restart Client1 from azure.
+
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/cd1002df-cd98-48ff-8302-24a102d7c344)
+
+
+
