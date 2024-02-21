@@ -101,5 +101,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/cd1002df-cd98-48ff-8302-24a102d7c344)
 
+-Log back into Client 1 and go to settings and click on "Rename this Pc (advanced)" -> Change -> select Domain and add "mydomain.com" -> Okay -> Put Jane's Login info.
+
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/30138258-5105-4810-8ba7-9d8b08206712)
+
 
 
