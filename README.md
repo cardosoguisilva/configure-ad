@@ -121,8 +121,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Password: Password1
 - Go to system properties -> Remote Desktop -> Select users that can remotely access this PC.
 - Add "Domain Users" -> Check names and apply.
-- Now all domain users can login into client1.
+- Now all domain users can log into client1.
   
 ![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/13cce874-c039-4c95-9a0c-080f5d094200)
+
+7 Create additional users and attempt to log into client-1 with one of the users
+- Login to DC-1 as jane_admin
+- Open PowerShell as an administrator. 
+- Create a new file and copy and paste this code from GitHub into PowerShell. ![link](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+- Run the Script and Users will be created.
+  
+![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/d9229799-2735-4423-ba35-8a8e26023768)
 
 
