@@ -105,5 +105,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ![image](https://github.com/cardosoguisilva/configure-ad/assets/157248613/30138258-5105-4810-8ba7-9d8b08206712)
 
-
+- After the VM restarted use Jane's login info.
+- - Username: mydomain.com\jane_admin
+  - Password: Password1
 
